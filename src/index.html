@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', { "title": "Главная" })
+  @@include('html/head.html', { "title": "Портфлио" })
   <body>
     
-    @@include('html/header.html',
-    {"activeclassHome": "menu__link active",
-     "activeclassAbout": "menu__link",    
-     "activeclassContact": "menu__link"})   
-     
-    <main>
-      <div class="container">
-        
-        <div>
-          <a href="#bottom" id="top">вниз</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse at iste, minima repellendus ipsum iusto excepturi voluptatum aliquam fuga adipisci architecto quia mollitia, aperiam omnis non dolorum id libero dolore fugit, sint eligendi. Temporibus odio illo quasi sunt quo delectus ullam facere tempora nulla quidem praesentium facilis magnam rem autem reprehenderit voluptate consequuntur, id nobis corporis est perferendis debitis! Aspernatur, blanditiis saepe consequuntur itaque repellendus quia porro quisquam at, repellat eum eius cupiditate ad in quaerat. Maxime adipisci voluptate quos esse nobis est voluptatem quisquam fuga eum pariatur porro ullam nisi voluptatum fugiat ea voluptatibus sint expedita repudiandae quaerat, magni accusamus modi tempora? Nihil blanditiis officiis maxime ipsam, dignissimos ut harum iusto eligendi repudiandae corrupti! Dolorem, vel facere illo nostrum, earum tempore obcaecati facilis, aliquam officia cupiditate ratione? Sequi rerum sed rem perspiciatis voluptatum quasi corrupti ullam saepe ex eligendi recusandae, a, maiores alias reprehenderit totam. Pariatur dignissimos inventore laborum maiores aperiam aspernatur nobis tenetur, necessitatibus dolor nostrum reprehenderit repudiandae recusandae maxime temporibus alias voluptate, dolorum cum? Eius vitae nisi assumenda iusto nam quisquam maiores nulla placeat illo nesciunt, suscipit, a natus inventore deserunt esse. Mollitia doloribus et adipisci cumque commodi quisquam nostrum ea corporis, facilis vitae, natus tempora!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse at iste, minima repellendus ipsum iusto excepturi voluptatum aliquam fuga adipisci architecto quia mollitia, aperiam omnis non dolorum id libero dolore fugit, sint eligendi. Temporibus odio illo quasi sunt quo delectus ullam facere tempora nulla quidem praesentium facilis magnam rem autem reprehenderit voluptate consequuntur, id nobis corporis est perferendis debitis! Aspernatur, blanditiis saepe consequuntur itaque repellendus quia porro quisquam at, repellat eum eius cupiditate ad in quaerat. Maxime adipisci voluptate quos esse nobis est voluptatem quisquam fuga eum pariatur porro ullam nisi voluptatum fugiat ea voluptatibus sint expedita repudiandae quaerat, magni accusamus modi tempora? Nihil blanditiis officiis maxime ipsam, dignissimos ut harum iusto eligendi repudiandae corrupti! Dolorem, vel facere illo nostrum, earum tempore obcaecati facilis, aliquam officia cupiditate ratione? Sequi rerum sed rem perspiciatis voluptatum quasi corrupti ullam saepe ex eligendi recusandae, a, maiores alias reprehenderit totam. Pariatur dignissimos inventore laborum maiores aperiam aspernatur nobis tenetur, necessitatibus dolor nostrum reprehenderit repudiandae recusandae maxime temporibus alias voluptate, dolorum cum? Eius vitae nisi assumenda iusto nam quisquam maiores nulla placeat illo nesciunt, suscipit, a natus inventore deserunt esse. Mollitia doloribus et adipisci cumque commodi quisquam nostrum ea corporis, facilis vitae, natus tempora!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse at iste, minima repellendus ipsum iusto excepturi voluptatum aliquam fuga adipisci architecto quia mollitia, aperiam omnis non dolorum id libero dolore fugit, sint eligendi. Temporibus odio illo quasi sunt quo delectus ullam facere tempora nulla quidem praesentium facilis magnam rem autem reprehenderit voluptate consequuntur, id nobis corporis est perferendis debitis! Aspernatur, blanditiis saepe consequuntur itaque repellendus quia porro quisquam at, repellat eum eius cupiditate ad in quaerat. Maxime adipisci voluptate quos esse nobis est voluptatem quisquam fuga eum pariatur porro ullam nisi voluptatum fugiat ea voluptatibus sint expedita repudiandae quaerat, magni accusamus modi tempora? Nihil blanditiis officiis maxime ipsam, dignissimos ut harum iusto eligendi repudiandae corrupti! Dolorem, vel facere illo nostrum, earum tempore obcaecati facilis, aliquam officia cupiditate ratione? Sequi rerum sed rem perspiciatis voluptatum quasi corrupti ullam saepe ex eligendi recusandae, a, maiores alias reprehenderit totam. Pariatur dignissimos inventore laborum maiores aperiam aspernatur nobis tenetur, necessitatibus dolor nostrum reprehenderit repudiandae recusandae maxime temporibus alias voluptate, dolorum cum? Eius vitae nisi assumenda iusto nam quisquam maiores nulla placeat illo nesciunt, suscipit, a natus inventore deserunt esse. Mollitia doloribus et adipisci cumque commodi quisquam nostrum ea corporis, facilis vitae, natus tempora!</p>
-          <a href="#top" id="bottom">вверх</a>
-           
+    <div class="preloader">
+      <div class="preloader__text">
+        <div class="preloader-text__wrap">
+          <div class="preloader-text__top">Наталья</div>
+        </div>
+
+        <div class="preloader__line">
+          <div class="preloader-text__wrap">
+            <div class="preloader-text__bot">Лысак</div>
+          </div>
+          <div class="preloader-line__inner">
+            <img src="@img/Line.svg" alt="">
+          </div>
         </div>
       </div>
-    </main>   
+    </div>
     
-    @@include('html/footer.html',{})
+    <!-- @@include('html/header.html',
+    {"activeclassHome": "menu__link active",
+     "activeclassAbout": "menu__link",    
+     "activeclassContact": "menu__link"})    -->
+     
+     <!-- <a href="#top" id="bottom">вверх</a> -->
+  
+    <!-- @@include('html/footer.html',{}) -->
 
     <script src="js/app.min.js"></script>
   </body>
