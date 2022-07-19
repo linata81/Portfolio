@@ -42,6 +42,11 @@ export const ttfToWoff = () => {
         .pipe(app.gulp.dest(`${app.path.build.fonts}`));
 }
 
+export const copyWoff = () => {
+ return app.gulp.src(app.path.src.fonts)
+       .pipe(app.gulp.dest(`${app.path.buildFolder}/fonts/`))
+}
+
 export const fontsStyle = () => {
   //файл стилей подключения шрифтов
   let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;

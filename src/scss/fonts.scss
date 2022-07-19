@@ -1,12 +1,19 @@
 @font-face {
-	font-family: NeueHaasDisplay;
+	font-family: gilroy;
+	font-display: swap;
+	src: url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: NeueHaasDisplay-Mediu;
 	font-display: swap;
 	src: url("../fonts/NeueHaasDisplay-Mediu.woff2") format("woff2"), url("../fonts/NeueHaasDisplay-Mediu.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: NeueHaasDisplay-Roman;
+	font-family: NeueHaasDisplay;
 	font-display: swap;
 	src: url("../fonts/NeueHaasDisplay-Roman.woff2") format("woff2"), url("../fonts/NeueHaasDisplay-Roman.woff") format("woff");
 	font-weight: 400;

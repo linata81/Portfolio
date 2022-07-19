@@ -22,7 +22,8 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: rgb(237, 248, 245);
+  display: flex;
+  // border: 1px solid green;
   @media screen and (max-width: $breakpoint1450) {
     max-width: 1200px;
   }
@@ -33,19 +34,7 @@ body {
     max-width: 960px;
   }
   @media screen and (max-width: $breakpoint768) {
-    max-width: 720px;
-  }
-  @media screen and (max-width: $breakpoint576) {
     max-width: 100%;
+    padding: 0 30px;
   }
 }
-
-//Animations
-// @keyframes fade {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
