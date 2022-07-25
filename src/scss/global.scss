@@ -25,6 +25,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
+
   @media screen and (max-width: $breakpoint1200) {
     max-width: 1140px;
   }

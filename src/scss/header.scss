@@ -41,6 +41,7 @@
   align-items: center;
   gap: 50px;
   z-index: 5;
+  position: relative;
   &__link {
     font-size: 17px;
     line-height: 22px;
@@ -82,11 +83,11 @@
     transition: all 1s ease-out; 
     &.active {
       pointer-events: all;  
-      clip-path: circle(130% at 100% 50%);
+      clip-path: circle(130% at 100% 10%);
     }
   }
   @media screen and (max-width: $breakpoint576) {
-    clip-path: circle(0px at calc(100% - 32.5px) 33px);
+    clip-path: circle(0px at calc(100% - 42.5px) 33px);
   }
 }
 .menu__item {
@@ -125,5 +126,31 @@
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+.language {
+  position: absolute;
+  right: -38px;
+  top: 120px;
+  font-weight: 700;
+  color: black;
+  transform: rotate(-90deg);
+  font-size: 18px;
+  z-index: 5;
+  span {
+    display: inline-flex;
+    padding: 0 7px;
+    cursor: pointer;
+    color: $primary;
+    transition: all 0.3s;
+  }
+  span.language-active, span:hover{
+    color: #F05718;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    font-size: 30px;
+    top: 80%;
+    right: -23px;
+    transform: rotate(90deg);
   }
 }

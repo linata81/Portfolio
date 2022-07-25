@@ -1,4 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
+import {langArr} from "./lang.js";
 
 flsFunctions.isWebp();
 
@@ -88,4 +89,27 @@ flsFunctions.isWebp();
   }
 })();
 
+//translation
+(() => {
+  const btns = document.querySelectorAll('.translate');
+  const items = document.querySelectorAll('.lang');
+  
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('id');
+      
+      if(!btn.classList.contains('language-active')) {
 
+        items.forEach((item) => {
+          item.textContent=langArr[lang][item.getAttribute('key')];
+        });
+        
+        btns.forEach((btn) => {
+          btn.classList.remove('language-active');
+        });
+        
+        btn.classList.add('language-active');
+      }
+    })
+  })
+})();
