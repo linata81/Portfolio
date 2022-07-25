@@ -1,6 +1,11 @@
 .header {
   padding-top: 30px;
-
+  padding-bottom: 30px;
+  @media screen and (max-width: $breakpoint768) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 7px 5px 32px -9px rgba(188, 189, 197, 0.34);
+  }
 }
 .header__container {
   align-items: center;
@@ -25,12 +30,10 @@
   line-height: 1.1;
 }
 .navbar {
-  // min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  // padding: 0 24px;
 }
 .menu {
   display: flex;
@@ -53,7 +56,7 @@
     position: absolute;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: #F05718;
     content: "";
     transition: width 0.3s ease-out;
@@ -68,25 +71,32 @@
     pointer-events: none;
     top: 0;
     left: 0;
-    //100% от лева минус падинг 20зч и половина ширины bar
     clip-path: circle(0px at calc(100% - 42.5px) 44px);  
     gap: 0;
     flex-direction: column;
     background-color: #ecedf3;
     text-align: center;
     justify-content: flex-start;
-    padding: 80px 50px;
-    transition: all 0.9s ease-out; 
+    align-items: flex-start;
+    padding: 80px 60px;
+    transition: all 1s ease-out; 
     &.active {
       pointer-events: all;  
       clip-path: circle(130% at 100% 50%);
     }
   }
+  @media screen and (max-width: $breakpoint576) {
+    clip-path: circle(0px at calc(100% - 32.5px) 33px);
+  }
 }
 .menu__item {
   @media screen and (max-width: $breakpoint768) {
     margin: 20px 0;
-    font-size: 25px;
+  }
+}
+.menu__link {
+  @media screen and (max-width: $breakpoint768) {
+    font-size: 35px;
   }
 }
 .hamburger {
@@ -116,33 +126,4 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-.btn {
-  background-color: #F05718;
-  border: 1px solid #F05718;
-  color: white;
-  font-size: 17px;
-  line-height: 22px;
-  border-radius: 5px;
-  padding: 7px 10px;
-  transition: all 0.5s;
-  &:hover {
-    background-color: white;
-    color: $primary;
-  }
-  @media screen and (max-width: $breakpoint768) {
-    display: none;
-  }
-}
-
-.header.fixed-nav {
-background-color: #F05718;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-min-height: 70px;
-z-index: 5;
- transition: all .3s ease ;
 }

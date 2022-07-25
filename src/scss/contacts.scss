@@ -1,0 +1,50 @@
+.contacts {
+  padding-bottom: 60px;
+  @media screen and (max-width: $breakpoint768)  {
+    padding-bottom: 40px;
+  }
+}
+.contacts__container {
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__content {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+  @media screen and (max-width: $breakpoint768) {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: $breakpoint576) {
+    gap: 10px;
+  }
+}
+.contacts__item, .contacts__socials {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $primary;
+    font-size: 18px;
+    transition: all 0.4s;
+    &:hover {
+      color: #F05718;
+      svg {
+        fill: #F05718;
+      }
+    }
+  }
+  svg {
+    width: 30px;
+    fill: $primary;
+    transition: all 0.4s;
+  }
+}
+// .contacts__socials {
+//   display: flex;
+//   flex-direction: column;
+//   a {
+    
+//   }
+// }

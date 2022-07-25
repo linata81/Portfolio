@@ -1,0 +1,130 @@
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  @media screen and (max-width: $breakpoint768) {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+.portfolio__container {
+  flex-direction: column;
+  align-items: center;
+}
+.works {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  @media screen and (max-width: $breakpoint992) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    gap: 20px;
+    width: 90%;
+  }
+  @media screen and (max-width: $breakpoint576) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 30px;
+  }
+}
+.work {
+  box-shadow: 0px 5px 10px 2px rgba(91, 91, 93, 0.3);
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .work__overlay {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  @media screen and (max-width: $breakpoint1200) {
+    height: 280px;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    height: 220px;
+  }
+  @media screen and (max-width: $breakpoint576) {
+    height: 340px;
+  }
+}
+.work__img {
+  transition: all 1s ease-out;
+  min-height: 100%;
+  min-width: 100%;
+}
+.work__overlay {
+  background: rgba(240, 87, 24, 0.8);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 400px;
+  font-family: gilroy;
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  @media screen and (max-width: $breakpoint1200) {
+    width: 250px;
+    height: 250px;
+    padding: 50px 20px 20px 20px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    width: 200px;
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: $breakpoint576) {
+    width: 300px;
+    height: 300px;
+    padding: 80px 20px 20px 20px;
+    font-size: 24px;
+  }
+}
+.work__use {
+  font-size: 18px;
+  font-family: NeueHaasDisplay;
+  margin-top: 15px;
+  text-transform: lowercase;
+  @media screen and (max-width: $breakpoint1200) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    font-size: 14px;
+  }
+}
+.work__arrow  {
+  font-family: NeueHaasDisplay;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 40px;
+  img {
+    width: 30px;
+  }
+  @media screen and (max-width: $breakpoint768) {
+    font-size: 16px;
+    bottom: 30px;
+    img {
+      width: 20px;
+    }
+  }
+}

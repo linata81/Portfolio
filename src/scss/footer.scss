@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.copy {
+  padding: 20px;
+  @media screen and (max-width: $breakpoint576) {
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+}
