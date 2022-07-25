@@ -25,7 +25,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  // border: 1px solid green;
   @media screen and (max-width: $breakpoint1200) {
     max-width: 1140px;
   }
@@ -56,22 +55,5 @@ body {
   }
   @media screen and (max-width: $breakpoint768) {
     font-size: 28px;
-  }
-}
-.btn {
-  background-color: #F05718;
-  border: 1px solid #F05718;
-  color: white;
-  font-size: 17px;
-  line-height: 22px;
-  border-radius: 5px;
-  padding: 7px 10px;
-  transition: all 0.5s;
-  &:hover {
-    background-color: white;
-    color: $primary;
-  }
-  @media screen and (max-width: $breakpoint768) {
-    display: none;
   }
 }
